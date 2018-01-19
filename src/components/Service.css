@@ -1,13 +1,11 @@
 .service {
 	margin-top: 100px;
-	/* min-height: 70vh; */
 }
 
 .service .title-image {
 	display: flex;
 	flex-direction: column;
 	min-height: 100px;
-	/* border-top: 10px solid #00abfd; */
 	background-image: url("../images/service-title.svg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -49,6 +47,7 @@
 	margin: auto;
 	margin-right: 20px;
 	max-height: 30px;
+	max-width:  30px;
 }
 
 .service-flex {
@@ -64,6 +63,7 @@
 @media screen and (min-width: 768px) {
 	.service li img {
 		max-height: 50px;
+		max-width:  50px;
 	}
 	.service li {
 		font-size: 2rem;

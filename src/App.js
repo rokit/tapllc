@@ -15,15 +15,10 @@ import Service from './components/Service'
 // json services
 import services from './services/services.json'
 
-// images
-import brick from './images/brick.svg'
-
 class App extends Component {
 
 	render() {
-		let serviceSummaryStyle = {}
-		serviceSummaryStyle.backgroundImage = `url(${brick})`
-		serviceSummaryStyle.backgroundSize = "80px"
+
 		return (
 			<div className="App">
 				<Header />
@@ -42,7 +37,7 @@ class App extends Component {
 					col2="Terry"
 					col3="Office"
 				/>
-				<div id="service-summary" style={serviceSummaryStyle}>
+				<div id="service-summary">
 					<p>Does your vacancy need attention? We make it show ready and keep it that way. Are your parking lots covered with litter? We provide lot porter services 5 days per week. Is your building a bit run down?  TAP will paint and spruce it up.  Having difficulty with those tenant handyman requests? TAP LLC provides those services too! From changing light bulbs to resetting toilets…we work for you!</p>
 					<p>TAP offers contract and/or hourly options, from all-inclusive to limited, based upon your needs. We can customize a package that is perfect for you.</p>
 					<p>OUR GOAL is to make your property look great and make your job easier!!!</p>
@@ -61,13 +56,15 @@ class App extends Component {
 				<Carousel
 					showStatus={false}
 					infiniteLoop={true}
-					autoPlay={true}
+					autoPlay={false}
 					showThumbs={false}
 					showArrows={true}
 					onChange={() => {}}
 					onClickItem={() => {}}
 					onClickThumb={() => {}}
 				>
+					<Quote quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." />
+
 					<Quote quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." />
 
 					<Quote quote="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt." />
@@ -87,13 +84,13 @@ export default App;
 
 const Quote = (props) => (
 	<div className="cSlide">
-			<div className="qu quote-left" />
+		<div className="qu quote-left" />
 		<div className="quote-container">
 			<div className="quote">
 				<p className="the-quote">{props.quote}</p>
 				<p className="quoted">- Joe Perry</p>
 			</div>
 		</div>	
-			<div className="qu quote-right" />
+		<div className="qu quote-right" />
 	</div>	
 )
