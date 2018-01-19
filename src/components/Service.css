@@ -17,7 +17,9 @@
 	font-size: 2rem;
 	font-weight: bold;
 }
-
+.service-title-svg {
+	fill: #2AA6FD;
+}
 .service-summary {
 	margin: auto;
 	width: 90%;

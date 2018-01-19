@@ -92,15 +92,43 @@ h1,h2,h3,h4,h5,h6 {
 	font-style: italic;
 }
 
+.client-quotes {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+	background-color: #2AA6FD;
+}
+.client-quotes h3 {
+	margin: auto;
+	color: white;
+	font-size: 3rem;
+}
+.arrow {
+	position: absolute;
+	z-index: 400;
+	margin: auto;
+	
+  width: 0; 
+	height: 0;
+	
+	left:  0px;
+	right: 0px;
+	bottom:      -30px;
+  border-left:  30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top:   30px solid #2AA6FD;	
+}
 .cSlide {
 	display: flex;
 	background-color: white !important;
 	padding: 20px;
 	width: 100%;
 	height: 100%;
-
-	border-top:    4px solid #00abfd;
-	border-bottom: 4px solid #00abfd;
+	align-items: center;
+	border-top:    4px solid #2AA6FD;
+	border-bottom: 4px solid #2AA6FD;
 }
 .qu {
 	background-image: url("./images/quote.svg");
@@ -124,20 +152,18 @@ h1,h2,h3,h4,h5,h6 {
 .quote-container {
 	display: flex;
 	margin: auto;
-
 	width: 100%;
-	height: 400px;
-
-	color: black;
 }
 .quote {
+	color: black;
 	margin: auto;
-
+	width: 100%;
 	text-align: left;
 	font-family: 'Abel', sans-serif;
 	font-size: 1.4rem;
 }
 .quoted {
+	color: #2AA6FD;
 	margin-top: 20px;
 	margin-right: 100px;
 	text-align: right;
@@ -170,6 +196,7 @@ h1,h2,h3,h4,h5,h6 {
 		width: 60%;
 	}
 	.quote {
+		text-align: justify;
 		margin-left:  40px;
 		margin-right: 40px;
 	}	
