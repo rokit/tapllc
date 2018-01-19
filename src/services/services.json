@@ -1,0 +1,74 @@
+{
+	"services": [
+		{
+			"title": "TAP MAKE READY SERVICE",
+			"name": "make-ready",
+			"summary": "We prepare your vacancy for new tenants, or for marketing. Services provided include:",
+			"image": "warehouse.jpg",
+			"list": [
+				"Demo and Remodel",
+				"Debris Removal (Non-hazardous)",
+				"Plumbing",
+				"Electric",
+				"HVAC",
+				"Painting",
+				"Flooring",
+				"Landscaping",
+				"Warehouse clean and blow out",
+				"Light Fixtures",
+				"Windows and Doors",
+				"Industrial Stairs",
+				"Everything to make your property clean, shiny and ready to show."
+			]
+		},
+		{
+			"title": "TAP LOT PORTER SERVICES",
+			"name": "lot-porter",
+			"summary": "",
+			"image": "lot.jpg",
+			"list": [
+				"Daily or weekly trash pick-up of your parking lot and grounds.",
+				"Pallet/wood/nail/debris removal",
+				"Ice and Snow Removal",
+				"Tree Trimming and Removal",
+				"Exterior Lights",
+				"Blow/sweep/detail"
+			]
+		},
+		{
+			"title": "TAP JANITORIAL SERVICES",
+			"name": "janitorial",
+			"summary": "",
+			"image": "mop.jpg",
+			"list": [
+				"Vacancy Cleaning",
+				"Warehouse Clean and Blow",
+				"Interior and Exterior Window Washing and Restoration",
+				"Floor Cleaning",
+				"Every service to make and keep your vacancy show ready.",
+				"Old Fashioned Work Ethic."
+			]
+		},
+		{
+			"title": "TAP TENANT SERVICES",
+			"name": "tenant",
+			"image": "tenant.jpg",
+			"summary": "",
+			"list": [
+				"A variety of tenant services with an excellent response time",
+				"Changing light bulbs and ballasts",
+				"Repairing/replacing toilets and sinks",
+				"Leaks and other damages",
+				"TAP LLC will keep your commercial office and industrial properties looking sharp!"
+			]
+		},
+		{
+			"title": "TAP ADMINISTRATIVE SERVICES",
+			"name": "admin",
+			"summary": "",
+			"list": [
+				"CUSTOMIZE YOUR PACKAGE TODAY!"
+			]
+		}
+	]
+}

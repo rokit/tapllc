@@ -1,0 +1,74 @@
+.service {
+	margin-top: 100px;
+	/* min-height: 70vh; */
+}
+
+.service .title-image {
+	display: flex;
+	flex-direction: column;
+	min-height: 100px;
+	/* border-top: 10px solid #00abfd; */
+	background-image: url("../images/service-title.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.service-title {
+	margin: auto;
+	color: rgb(255, 255, 255);
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.service-summary {
+	margin: auto;
+	width: 90%;
+	font-size: 1.1rem;
+	color: #eee;
+	padding: 20px;
+}
+.service ul {
+	margin: auto;
+	margin-left: 1rem;
+	padding: 20px;
+	text-align: left;
+	list-style: none;
+}
+.service li {
+	display: flex;
+	flex-direction: row;
+	font-family: 'Abel', sans-serif;
+	font-size: 1.5rem;
+	margin-bottom: 14px;
+}
+.service li span {
+	flex: 1;
+	margin: auto;
+}
+.service li img {
+	margin: auto;
+	margin-right: 20px;
+	max-height: 30px;
+}
+
+.service-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.service-image {
+	min-height: 8rem;
+	height: 500px;
+}
+
+@media screen and (min-width: 768px) {
+	.service li img {
+		max-height: 50px;
+	}
+	.service li {
+		font-size: 2rem;
+	}
+	.service-summary {
+		width: 60%;
+	}	
+}

@@ -1,0 +1,145 @@
+.main-header p {
+	display: block;
+}
+
+.main-header {
+	color: rgb(238, 238, 238);
+	background-color: hsla(202, 0%, 33%, 0.96);
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+.app-header {
+	display: block;
+	align-items: center;
+	min-height: 4.5rem;
+}
+
+.logo {
+	color: #00abfd;
+	cursor: pointer;
+	padding-top: 20px;
+	grid-area: logo;
+	width: 100%;
+}
+
+.hamburger {
+	position: absolute;
+	top: 0;
+	right: 0;
+	grid-area: hamburger;
+	height: 60px;
+}
+
+.hamburger:hover {
+	background-color: #555;
+}
+
+.customLink {
+	font-weight: bold;
+	font-size: 1.1rem;
+	display: flex;
+	width: 100%;
+
+	transition: height 200ms;
+}
+/* .customLink .service-text {
+	position: absolute;
+	bottom: -6px;
+	left: 0;
+	right: 0;
+	font-size: 0.7rem;
+} */
+.customLink a {
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 5rem;
+	
+	transition: background 200ms;
+}
+.customLink a:hover {
+	background-color: rgba(255,255,255,0.2);
+}
+.customLink .name {
+	/* flex: 9 0; */
+	padding: 4px 4px;
+	margin: auto;
+	transition: transform 200ms;
+}
+.customLink a:hover .name {
+	transform: translateY(-4px);
+}
+.active {
+	background-color: rgba(255,255,255,0.3);
+}
+
+.link1 {
+	grid-area: link1;
+}
+.link2 {
+	grid-area: link2;
+}
+.link3 {
+	grid-area: link3;
+}
+.link4 {
+	grid-area: link4;
+}
+.link5 {
+	grid-area: link5;
+}
+.link6 {
+	grid-area: link6;
+}
+.trapezoid {
+	position: absolute;
+	border-top: 1.5rem solid hsla(202, 0%, 33%, 0.96);
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	height: 0;
+	left: 0;
+	right: 0;
+	/* bottom: -1.5rem; */
+	width: 200px;
+	margin: auto;
+}
+.llc {
+	position: absolute;
+	text-align: center;
+	top: -1.5rem;
+	left:0;
+	right:0;
+}
+@media screen and (min-width: 768px) {
+	.app-header {
+		display: flex;
+	}
+}
+@supports (grid-area: auto) {
+	.customLink a {
+		height: auto;
+	}	
+	.app-header {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: 
+    ".     logo  hamburger"
+    "link1 link1 link1"
+    "link2 link2 link2"
+    "link3 link3 link3"
+    "link4 link4 link4"
+    "link5 link5 link5"
+    "link6 link6 link6";
+	}
+	@media screen and (min-width: 768px) {
+		.app-header {
+			grid-template-columns: minmax(0, 3fr) minmax(4.75rem, 1fr) minmax(4.75rem, 1fr) minmax(6rem, 1fr)  minmax(17rem, 2fr)    minmax(6rem, 1fr) minmax(4.75rem, 1fr) minmax(4.75rem, 1fr) minmax(0, 3fr);
+			grid-template-areas:
+			". link1 link2 link3 logo link4 link5 . .";
+		}
+	}
+}
