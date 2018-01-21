@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Fade } from 'react-reveal';
+
 import './Service.css'
 
 import bullet from '../images/bullet.svg'
@@ -11,7 +13,7 @@ class Service extends Component {
 		let serviceImageStyle = {}
 		let serviceStyle = {}
 		let img = ""
-
+		let delay = 0;
 		serviceImageStyle.height = "100px"
 		// serviceStyle.minHeight = "100vh"
 
@@ -37,14 +39,14 @@ class Service extends Component {
 						</div>
 					</section>
 					<section className="service-list">
-						<ul>
-							{this.props.details.list.map((item) => 
-								<li key={Math.random(100000000000)}>
-									<img alt="bullet pont" src={bullet} />
-									<span>{item}</span>
-								</li>
-							)}
-						</ul>
+					<Fade right cascade tag="ul">
+						{this.props.details.list.map((item) => 
+							<li key={Math.random(100000000000)}>
+								<img alt="bullet pont" src={bullet} />
+								<span>{item}</span>
+							</li>
+						)}
+					</Fade>
 					</section>
 				</div>
       </div>
