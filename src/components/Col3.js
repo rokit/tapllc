@@ -3,20 +3,32 @@ import './Col3.css'
 
 class Col3 extends Component {
   render() {
+		let elem1
+		let elem2
+		let elem3
+		if (this.props.phone) {
+			elem1 = <a href={`tel:${this.props.col1Title}`}><h4>{this.props.col1Title}</h4></a>
+			elem2 = <a href={`tel:${this.props.col2Title}`}><h4>{this.props.col2Title}</h4></a>
+			elem3 = <a href={`tel:${this.props.col3Title}`}><h4>{this.props.col3Title}</h4></a>
+		} else {
+			elem1 = <h4>{this.props.col1Title}</h4>
+			elem2 = <h4>{this.props.col2Title}</h4>
+			elem3 = <h4>{this.props.col3Title}</h4>
+		}
     return (
       <div className="flex-col3" id="Col3">
 				<div className="flex-col3-container">
 					<div className="col1">
 						<p>{this.props.col1}</p>
-						<h4>{this.props.col1Title}</h4>
+						{elem1}
 					</div>
 					<div className="col2">
 						<p>{this.props.col2}</p>
-						<h4>{this.props.col2Title}</h4>
+						{elem2}
 					</div>
 					<div className="col3">
 						<p>{this.props.col3}</p>
-						<h4>{this.props.col3Title}</h4>
+						{elem3}
 					</div>
 				</div>
       </div>

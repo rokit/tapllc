@@ -1,5 +1,6 @@
 header {
 	background-color: hsla(202, 0%, 33%, 0.96);
+	/* background-color: rgba(0, 0, 0, 0.7); */
 	position: fixed;
 	z-index: 9999;
 	width: 100%;
@@ -12,9 +13,9 @@ nav ul {
 }
 nav ul li {
 	display: block;
-	color: rgba(238,238,238,0);
 	height: 0rem;
 	transition: height 200ms;
+	color: rgba(238,238,238,0);
 }
 
 nav ul li a {
@@ -22,7 +23,6 @@ nav ul li a {
 	flex-direction: column;
 	cursor: pointer;
 	height: 100%;
-	
 	transition: background 200ms;
 }
 nav ul li .name {

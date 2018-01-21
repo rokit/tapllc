@@ -33,6 +33,7 @@ class App extends Component {
 					col1Title="(405) 394 - 4446"
 					col2Title="(405) 655 - 4858"
 					col3Title="(405) 703 - 2043"
+					phone={true}			
 					col1="Pam"
 					col2="Terry"
 					col3="Office"
@@ -45,7 +46,7 @@ class App extends Component {
 				<Col3
 					col1Title="INSURED"
 					col2Title="EXCELLENT REFERENCES"
-					col3Title="FREE ESTIMATES"
+					col3Title="FREE ESTIMATES"				
 					col1=""
 					col2=""
 					col3=""
@@ -63,7 +64,7 @@ class App extends Component {
 					infiniteLoop={true}
 					autoPlay={true}
 					showThumbs={false}
-					showArrows={true}
+					showArrows={false}
 					onChange={() => {}}
 					onClickItem={() => {}}
 					onClickThumb={() => {}}
