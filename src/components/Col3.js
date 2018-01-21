@@ -7,6 +7,7 @@ class Col3 extends Component {
 		let elem1
 		let elem2
 		let elem3
+
 		if (this.props.phone) {
 			elem1 = <a href={`tel:${this.props.col1Title}`}><h4>{this.props.col1Title}</h4></a>
 			elem2 = <a href={`tel:${this.props.col2Title}`}><h4>{this.props.col2Title}</h4></a>
@@ -19,24 +20,24 @@ class Col3 extends Component {
 		return (
 			<div className="flex-col3" id="Col3">
 				<div className="flex-col3-container">
-					<Zoom delay={200}>
-						<Fade delay={200}>
+					<Zoom delay={0}>
+						<Fade delay={0}>
 							<div className="col1">
 								<p>{this.props.col1}</p>
 								{elem1}
 							</div>
 						</Fade>
 					</Zoom>
-					<Zoom delay={400}>
-						<Fade delay={400}>
+					<Zoom delay={200}>
+						<Fade delay={200}>
 							<div className="col2">
 								<p>{this.props.col2}</p>
 								{elem2}
 							</div>
 						</Fade>
 					</Zoom>
-					<Zoom delay={600}>
-						<Fade delay={600}>
+					<Zoom delay={400}>
+						<Fade delay={400}>
 							<div className="col3">
 								<p>{this.props.col3}</p>
 								{elem3}
