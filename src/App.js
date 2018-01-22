@@ -66,7 +66,7 @@ class App extends Component {
 					<Quote quote="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur." />
 
 				</Carousel>
-				<div className="tap-team">
+				<div id="tap-team">
 					<p>TAP team members are professionals with over 50 years combined experience. You can rest assured TAP will represent you in the best possible way!!</p>
 				</div>
 			</div>

@@ -9,11 +9,6 @@ h1,h2,h3,h4,h5,h6 {
   text-align: center;
 }
 
-.tap-team {
-	font-weight: bold;
-	font-style: italic;
-}
-
 .client-quotes {
 	position: relative;
 	display: flex;
@@ -41,4 +36,13 @@ h1,h2,h3,h4,h5,h6 {
   border-left:  30px solid transparent;
   border-right: 30px solid transparent;
   border-top:   30px solid #2AA6FD;	
+}
+
+#tap-team {
+	text-align: center;
+	padding: 20px;
+	color: #2AA6FD;
+	font-size: 2rem;
+	font-weight: bold;
+	font-style: italic;
 }
