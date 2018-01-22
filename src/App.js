@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './App.css'
+
 import { Carousel } from 'react-responsive-carousel';
 import { Fade } from 'react-reveal';
 
 import Header from './components/Header'
+import Quote from './components/Quote'
 import Col3 from './components/Col3'
 import Service from './components/Service'
 
@@ -20,7 +22,6 @@ import services from './services/services.json'
 class App extends Component {
 
 	render() {
-
 		return (
 			<div className="App">
 				<Header />
@@ -67,17 +68,15 @@ class App extends Component {
 					<h3>What Our Clients Say</h3>
 					<div className="arrow" />
 				</div>
+
 				<Carousel
 					showStatus={false}
 					infiniteLoop={true}
-					autoPlay={true}
+					autoPlay={false}
 					showThumbs={false}
 					showArrows={false}
-					onChange={() => {}}
-					onClickItem={() => {}}
-					onClickThumb={() => {}}
+					dynamicHeight={true}
 				>
-
 					<Quote quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." />
 
 					<Quote quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." />
@@ -85,6 +84,7 @@ class App extends Component {
 					<Quote quote="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt." />
 
 					<Quote quote="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur." />
+
 				</Carousel>
 				<div className="tap-team">
 					<p>TAP team members are professionals with over 50 years combined experience. You can rest assured TAP will represent you in the best possible way!!</p>
@@ -95,17 +95,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-const Quote = (props) => (
-	<div className="cSlide">
-		<div className="qu quote-left" />
-		<div className="quote-container">
-			<div className="quote">
-				<p className="the-quote">{props.quote}</p>
-				<p className="quoted">- Joe Perry</p>
-			</div>
-		</div>	
-		<div className="qu quote-right" />
-	</div>	
-)

@@ -20,8 +20,8 @@ class Col3 extends Component {
 		return (
 			<div className="flex-col3" id="Col3">
 				<div className="flex-col3-container">
-					<Zoom delay={0}>
-						<Fade delay={0}>
+					<Zoom>
+						<Fade>
 							<div className="col1">
 								<p>{this.props.col1}</p>
 								{elem1}
