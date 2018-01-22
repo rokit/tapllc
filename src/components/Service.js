@@ -38,7 +38,7 @@ class Service extends Component {
 						</div>
 					</section>
 					<section className="service-list">
-						<Fade right cascade tag="ul">
+						<Fade right cascade tag="ul" delay={-200} duration={400}>
 							{this.props.details.list.map((item) => 
 								<li key={Math.random(100000000000)}>
 									<img alt="bullet pont" src={bullet} />

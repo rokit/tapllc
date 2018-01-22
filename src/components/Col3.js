@@ -20,24 +20,24 @@ class Col3 extends Component {
 		return (
 			<div className="flex-col3" id="Col3">
 				<div className="flex-col3-container">
-					<Zoom>
-						<Fade>
+					<Zoom duration={200}>
+						<Fade duration={200}>
 							<div className="col1">
 								<p>{this.props.col1}</p>
 								{elem1}
 							</div>
 						</Fade>
 					</Zoom>
-					<Zoom delay={200}>
-						<Fade delay={200}>
+					<Zoom delay={200} duration={200}>
+						<Fade delay={200} duration={200}>
 							<div className="col2">
 								<p>{this.props.col2}</p>
 								{elem2}
 							</div>
 						</Fade>
 					</Zoom>
-					<Zoom delay={400}>
-						<Fade delay={400}>
+					<Zoom delay={400} duration={200}>
+						<Fade delay={400} duration={200}>
 							<div className="col3">
 								<p>{this.props.col3}</p>
 								{elem3}
