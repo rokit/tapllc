@@ -5166,7 +5166,7 @@ react-dev-utils@^5.0.0:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@^16.2.0:
+react-dom@^16.0.0-beta.2, react-dom@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.2.0.tgz#69003178601c0ca19b709b33a83369fe6124c044"
   dependencies:
@@ -5192,13 +5192,6 @@ react-responsive-carousel@^3.1.30:
     classnames "^2.2.5"
     prop-types "^15.5.8"
     react-easy-swipe "^0.0.13"
-
-react-reveal@^0.7.3:
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/react-reveal/-/react-reveal-0.7.3.tgz#4b7265b48251813acf735ab862d1687ad85d4570"
-  dependencies:
-    babel-runtime "^6.26.0"
-    prop-types "^15.5.10"
 
 react-router-dom@^4.2.2:
   version "4.2.2"
@@ -5273,7 +5266,15 @@ react-scroll@^1.7.6:
   dependencies:
     prop-types "^15.5.8"
 
-react@^16.2.0:
+react-scrollreveal@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-scrollreveal/-/react-scrollreveal-1.1.2.tgz#75ec8a766f4bb032d05332558e1108d2bb803cf1"
+  dependencies:
+    react "^16.0.0-beta.2"
+    react-dom "^16.0.0-beta.2"
+    scrollreveal "^4.0.0-beta.23"
+
+react@^16.0.0-beta.2, react@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
   dependencies:
@@ -5440,6 +5441,10 @@ regjsparser@^0.1.4:
 relateurl@0.2.x:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
+
+rematrix@0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/rematrix/-/rematrix-0.2.2.tgz#c96a050260782db9908904885991256e23beda5d"
 
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
@@ -5648,6 +5653,13 @@ schema-utils@^0.3.0:
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.3.0.tgz#f5877222ce3e931edae039f17eb3716e7137f8cf"
   dependencies:
     ajv "^5.0.0"
+
+scrollreveal@^4.0.0-beta.23:
+  version "4.0.0-beta.25"
+  resolved "https://registry.yarnpkg.com/scrollreveal/-/scrollreveal-4.0.0-beta.25.tgz#9c5c188531780f5bcb17cb230669b6b95a8c31f3"
+  dependencies:
+    rematrix "0.2.2"
+    tealight "0.2.1"
 
 select-hose@^2.0.0:
   version "2.0.0"
@@ -6105,6 +6117,10 @@ tar@^2.2.1:
     block-stream "*"
     fstream "^1.0.2"
     inherits "2"
+
+tealight@0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/tealight/-/tealight-0.2.1.tgz#da1354537bd224fa5c711e1cd6a4588e6545a15b"
 
 test-exclude@^4.1.1:
   version "4.1.1"

@@ -1,0 +1,21 @@
+#service-summary {
+	margin: auto;
+	text-align: left;
+	background-image: url(../images/brick.svg);
+	background-size: 80px 80px;
+}
+
+#service-summary p {
+	font-family: 'Abel', sans-serif;
+	font-size: 2rem;
+	color: rgb(59, 59, 59);
+	margin: auto;
+	padding: 20px;
+	width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+	#service-summary p {
+		width: 60%;
+	}
+}

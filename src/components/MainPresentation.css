@@ -1,0 +1,47 @@
+#main-presentation {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 0;
+	width: 100%;
+	min-height: 1024px;
+	background-image: url("../images/tommerton2010-interiors.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.spacer {
+	height: 1024px;
+}
+#why-choose {
+	width: 80%;
+	margin: auto;
+}
+
+#why-choose h3 {
+	color: white;
+	font-size: 3rem;
+	text-shadow: 3px 3px 8px #222;
+}
+
+#why-choose p {
+	font-size: 1.3rem;
+	border: 3px solid white;
+	color: #333;
+	text-align: left;
+	padding: 20px;
+	background-color: rgba(255,255,255,0.7);
+	/* text-shadow: 3px 3px 8px #222; */
+}
+
+@media screen and (min-width: 768px) {
+	#why-choose {
+		width: 40%;
+	}
+	#why-choose p {
+		text-align: justify;
+	}
+	#main-presentation {
+		height: 100vh;
+	}	
+}
