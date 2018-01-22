@@ -72,7 +72,7 @@ class App extends Component {
 				<Carousel
 					showStatus={true}
 					infiniteLoop={false}
-					autoPlay={false}
+					autoPlay={true}
 					showThumbs={false}
 					showArrows={false}
 				>
