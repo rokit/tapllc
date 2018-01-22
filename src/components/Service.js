@@ -61,5 +61,15 @@ export default withScrollReveal([
 			duration: 500
     },
     interval: 100
-  }
+	},
+	{
+		selector: '.title-image',
+		options: {
+      reset: false,
+			delay: 0,
+			origin: 'top',
+			distance: '20rem',
+			duration: 500
+		}
+	}	
 ])(Service)
