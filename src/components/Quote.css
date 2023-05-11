@@ -36,22 +36,23 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 46px;
   overflow-y: auto;
 }
 .quote {
-  color: black;
   margin: auto;
-  padding: 80px;
-  width: 100%;
+  color: black;
   font-size: 2rem;
   text-align: left;
   font-family: "Abel", sans-serif;
 }
+.the-quote {
+  margin: 0px;
+}
 .quoted {
   color: #2aa6fd;
-  margin-top: 20px;
-  margin-right: 100px;
   text-align: right;
+  margin: 0px;
 }
 
 @media screen and (min-width: 768px) {
@@ -59,5 +60,6 @@
     width: 60%;
   }
   .quote {
+    width: 80%;
   }
 }
