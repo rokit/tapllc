@@ -10,7 +10,7 @@ class Quote extends Component {
 					<div className="qu quote-left" />
 					<div className="quote">
 						<p className="the-quote">{this.props.quote}</p>
-						<p className="quoted">- Joe Perry</p>
+						<p className="quoted">- {this.props.person}</p>
 					</div>
 					<div className="qu quote-right" />
 				</div>
