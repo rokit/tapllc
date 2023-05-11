@@ -57,13 +57,21 @@ class App extends Component {
 					emulateTouch={true}
 					swipeScrollTolerance={1}
 				>
-					<Quote quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." />
+					<Quote
+						person="Greg Schaeffer"
+						quote="We've used TAP on three jobs and it's always a great experience. Thanks, TAP!" />
 
-					<Quote quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." />
+					<Quote
+						person="Jake Rappaport"
+						quote="Competitive rates, great quality, fast turnaround." />
 
-					<Quote quote="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt." />
+					<Quote
+						person="Allen Brenam"
+						quote="It's not every day you get a team with a work ethic like this. Can't recommend them enough." />
 
-					<Quote quote="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur." />
+					<Quote
+						person="Ashley Hughes"
+						quote="TAP is my go-to when something breaks or one of my apartment units needs maintenance. They're reliable and always get the job done. I can't say the same for other contractors I've used." />
 
 				</Carousel>
 				<div id="tap-team">
